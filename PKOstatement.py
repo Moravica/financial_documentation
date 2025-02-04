@@ -9,8 +9,8 @@ def add_text_to_pdf(input_pdf, output_pdf, positions, Statement_Num, sort):
     elif sort == "2":
         number = -1
 
-    if int(Statement_Num) != 0:
-        doc[0].insert_text((550, 40), Statement_Num, fontsize=40, color=(1, 0, 0)) 
+    if Statement_Num != "0":
+        doc[0].insert_text((500, 40), Statement_Num, fontsize=40, color=(1, 0, 0)) 
         text_template = f"{Statement_Num}/"
     else:
         text_template = ""
